@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<base target="_blank">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+		<link rel="stylesheet" href="../assets/style.css">
+		<link rel="icon" type="image/x-icon" href="flag_icon.png">
+
+		<title>Physical Cyclic Animations</title>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23662412-4"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-23662412-4');
+		</script>
+
+		<script src="https://kit.fontawesome.com/13cb060381.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.7.0.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container container-small pb-5">
+			<div class="row pt-4 pb-3 justify-content-center">
+				<div class="col-12 pt-1 fade-down">
+					<h2 class="text-center mb-4">Physical Cyclic Animations</h2>
+					<div class="text-center font-weight-normal h5">
+						<a class="pr-4" href="https://shiyang-jia.com">Shiyang Jia</a>,
+						<a href="https://stephaniewang.page/">Stephanie Wang</a>, 
+						<a href="https://cseweb.ucsd.edu/~tzli/">Tzu-Mao Li</a>, 
+						<a href="https://cseweb.ucsd.edu/~alchern/">Albert Chern</a>
+					</div>
+					<div class="text-center font-weight-normal h6 pt-1">
+						University of California San Diego
+					</div>
+					<div class="text-center font-weight-normal h5 pt-2">
+						<a href="https://computeranimation.org">SCA 2023</a>
+					</div>
+				</div>
+				<div class="col-12 text-center pt-3 pb-2 popover-delay">
+					<a href="paper.pdf" class="btn"><i class="fa-regular fa-file-lines"></i> PDF (16MB)</a>&nbsp;&nbsp;
+					<a href="paper-compressed.pdf" class="btn"><i class="fa-regular fa-file-lines"></i> PDF (2.5MB)</a>&nbsp;&nbsp;
+					<a href="poster.pdf" class="btn"><i class="fa-solid fa-file-image"></i> Poster</a>&nbsp;&nbsp;
+					<a href="https://youtu.be/y-cW0uWe68s" class="btn"><i class="fa-brands fa-youtube"></i> Video</a>&nbsp;&nbsp;
+					<a href="#" class="btn"><i class="fa-brands fa-youtube"></i> Talk</a>&nbsp;&nbsp;
+					<a href="https://github.com/pielet/Codim-IPC/tree/master" class="btn"><i class="fa-brands fa-github hover-icon"></i> Code</a>&nbsp;&nbsp;
+					<a href="#bibtex" class="btn" target="_self"><i class="fa-solid fa-paperclip"></i> BibTex</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12" style="position: relative; top:0; left:0">
+					<img alt="teaser figure: flag post" class="img-fluid" id="teaser-img">
+					<span style="position: absolute; left: 12%; top: 90%"><b>Forward simulation</b></span>
+					<span style="position: absolute; left: 60%; top: 90%"><b>Cyclic animation</b></span>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-12">
+					<h4 class="pb-1">Abstract</h4>
+					<p class="text-justify">
+						We address the problem of synthesizing physical animations that can loop seamlessly. We formulate a variational approach by deriving a physical law in a periodic time domain. The trajectory of the animation is represented as a parametric closed curve, and the physical law corresponds to minimizing the bending energy of the curve. Compared to traditional keyframe animation approaches, our formulation is <em>constraint-free</em>, which allows us to apply a standard Gauss-Newton solver. We further propose a fast projection method to efficiently generate an initial guess close to the desired animation. Our method can handle a variety of physical cyclic animations, including clothes, soft bodies with collisions, and N-body systems.
+					</p>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<h4 class="mb-3">Demo</h4>
+				<div class="col-12 text-center">
+					<iframe src="https://www.youtube.com/embed/y-cW0uWe68s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<h4>Presentation</h4>
+				<div class="col-12">
+					Coming soon!
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<h4>Code</h4>
+				<div class="col-12">
+					Coming soon!
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<h4>Paper</h4>
+				<div class="row mt-2 mb-4">
+					<div class="col-2">
+						<a href="paper.pdf"><img src="paper_cover.jpg" alt="Paper" class="layered-paper-big" style="width:80%"></a>
+					</div>
+					<div class="col-10">
+						<p>
+							S. Jia, S. Wang, T. Li, A. Chern<br>
+							<b>Physical Cyclic Animaions</b><br>
+							<a href="http://computeranimation.org/program/">Symposium on Computer Animation, 2023</a>
+						</p>
+						<a href="paper.pdf" class="btn btn-sm">PDF (16MB)</a>
+						<a href="paper-compressed.pdf" class="btn btn-sm">PDF (2.5MB)</a>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="row mb-5">
+				<h4>BibTex</h4>
+				<div class="col-12 mt-1">
+					<pre id="bibtex"><code>@article{Jia:2023:PCA,
+    title = {Physical Cyclic Animations}, 
+    author = {Jia, Shiyang and Wang, Stephanie and Li, Tzu-Mao and Chern, Albert},
+    journal = {Proc. ACM Comput. Graph. Interact. Tech.},
+    year = {2023},
+    month = {aug},
+    volume = {6},
+    number = {3},
+    numpages = {18},
+    url = {https://doi.org/10.1145/3606938}
+}</code></pre>
+				</div>
+			</div>
+
+		<footer class="row">
+			<figcaption class="figure-caption text-center">
+				Copyright © 2023 Shiyang Jia<br>
+				Last update: 8/2023
+			</figcaption>
+		</footer>
+
+		<script src="../assets/script.js"></script>
+	</body>
+</html>

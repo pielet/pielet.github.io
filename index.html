@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<base target="_blank">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/style.css">
+		<link rel="icon" type="image/x-icon" href="assets/kupo.png">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23662412-4"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-23662412-4');
+		</script>
+
+		<script src="https://kit.fontawesome.com/13cb060381.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.7.0.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+		<title>Shiyang Jia</title>
+	</head>
+	<body>
+		<div class="container container-small mb-5">
+			<div class="row pt-4 pb-2 justify-content-center">
+				<div class="col-7 pt-2 text-center fade-down" id="self-info">
+					<h2>Shiyang Jia (郏诗阳)</h2>
+					<h5>PhD student @ UCSD</h5>
+					<div class="mt-2 mb-2">
+						<i class="fas fa-map-marker-alt"></i> San Diego, CA
+					</div>
+					<div class="mt-4 mb-3">
+						<!-- <a href=""><i class="ai ai-google-scholar ai-2x hover-icon pr-3"></i></a> -->
+						<a href="https://github.com/pielet"><i class="fa-brands fa-github fa-2xl hover-icon"></i></a>&ensp;
+						<a href="https://www.linkedin.com/in/shiyang-jia-a4aa6b174/"><i class="fa-brands fa-linkedin fa-2xl hover-icon"></i></a>&ensp;
+						<a href="assets/Resume.pdf"><i class="fa-regular fa-file-lines fa-2xl hover-icon"></i></a>
+					</div>
+					<div class="mt-1 mb-1">
+						<a href="mailto:syjia0325@gmail.com"><i class="fas fa-envelope hover-icon"></i></a> syjia0325@gmail.com
+					</div>
+				</div>
+				<div class="col-3 fade-left">
+					<figure>
+						<img src="assets/ncg_light.png" alt="pielet" class="figure-img rounded img-fluid hover-profile" id="profile-img">
+						<figcaption class="figure-caption text-center">
+							Credit to <a href="https://twitter.com/nocopyrightgirl"><i class="fa-brands fa-x-twitter"></i></a> <a href="https://twitter.com/nocopyrightgirl">nocopyrightgirl</a>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p>Hi there! I am a second-year PhD student at <a href="http://visualcomputing.ucsd.edu/">UC San Diego Center for Visual Computing</a> advised by <a href="https://cseweb.ucsd.edu/~tzli/">Tzu-Mao Li</a> and <a href="https://cseweb.ucsd.edu/~alchern/">Albert Chern</a>. My research focuses on physical simulation, numerical optimization, and animation control problem. I am interested in building tools and algorithms that help airtists better design animations and exploring the connections among physical simulation, geometry processing, and rendering.</p>
+					<p>I received B.E. in <a href="https://www.cs.sjtu.edu.cn/en/">Computer Science and Technology</a> from <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a> in 2020. I worked on hair simulation and collision handling with <a href="https://tiantianliu.cn/">Tiantian Liu</a> in <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia</a> during the senior year of my undergrad. After graduation, I spent one gap year working on real-time cloth simulation in <a href="https://faculty.sist.shanghaitech.edu.cn/faculty/liuxp/flare/index.html">Flare lab</a> and <a href="https://www.mihoyo.com/en/">miHoYo</a>.</p>
+					<p class="text-justify">Outside of research, I enjoy <a href="https://www.instagram.com/pielet_/">drawing</a>, cooking, karaoke, and body-building. I am also (unsurprisingly) a big fun of games and anime ;p</p>
+				</div>
+			</div>
+
+			<hr>
+			<div class="row mb-1">
+				<h4>Research</h4>
+			</div>
+
+			<div class="modal fade" id="bibtex-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">BibTex</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<pre id="bibtex"><code></code></pre>
+	      				</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-sm btn-copy"><i class="fa-solid fa-copy"></i> Copy</button>
+							<a class="btn btn-sm btn-download" download><i class="fa-solid fa-download"></i> Download</a>
+						</div>
+					</div>
+  				</div>
+			</div>
+
+			<div class="row pb-2">
+				<div class="col-2">
+					<img src="physical_cyclic_animations/cyclic_flag.gif" alt="physical_cyclic_animations" class="img-fluid rounded img-thumbnail">
+				</div>
+				<div class="col-10">
+					<h5><a class="title" href="physical_cyclic_animations/" target="_self">Physical Cyclic Animations</a></h5>
+					<p>
+						<b>Shiyang Jia</b>, <a class="author" href="https://stephaniewang.page/">Stephanie Wang</a>, <a class="author" href="https://cseweb.ucsd.edu/~tzli/">Tzu-Mao Li</a>, <a class="author" href="https://cseweb.ucsd.edu/~alchern/">Albert Chern</a>
+						<br>
+						<a href="https://computeranimation.org">Proceedings of the ACM on Computer Graphics and Interactive Techniques <b>(SCA 2023)</b></a>, Los Angeles
+					</p>
+					<a href="physical_cyclic_animations" target="_self" class="btn btn-sm"><i class="fa-regular fa-window-restore"></i> Webpage</a>
+					<a href="physical_cyclic_animations/paper.pdf" class="btn btn-sm"><i class="fa-regular fa-file-lines"></i> Paper</a>
+					<a href="https://youtu.be/y-cW0uWe68s" class="btn btn-sm"><i class="fa-brands fa-youtube"></i> Video</a>
+					<a href="#" class="btn btn-sm"><i class="fa-brands fa-youtube"></i> Talk</a>
+					<a href="https://github.com/pielet/Codim-IPC/tree/master" class="btn btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+					<button type="button" class="btn btn-sm btn-bibtex" data-bs-toggle="modal" data-bs-target="#bibtex-modal">
+						<i class="fa-solid fa-paperclip"></i> BibTex
+						<a href="physical_cyclic_animations/loopy.bib" hidden></a>
+						<div class="bibtex-content" hidden>@article{Jia:2023:PCA,
+    title = {Physical Cyclic Animations}, 
+    author = {Jia, Shiyang and Wang, Stephanie and Li, Tzu-Mao and Chern, Albert},
+    journal = {Proc. ACM Comput. Graph. Interact. Tech.},
+    year = {2023},
+    month = {aug},
+    volume = {6},
+    number = {3},
+    numpages = {18},
+    url = {https://doi.org/10.1145/3606938}
+}</div>
+					</button>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="row mb-2">
+				<span data-bs-toggle="collapse" href="#projects" role="button" aria-expanded="false"><h4>Projects</h4></span>
+			</div>
+
+			<div class="collapse" id="projects">
+			<div class="row mb-2">
+				<div class="col-3">
+					<div class="card text-center" style="width: 13rem;">
+						<img src="projects/hairball.gif" class="card-img-top hover-img" alt="project: rotating hair ball">
+						<h6 class="card-header">Hair simulation</h6>
+						<div class="card-body">
+							<p class="figure-caption">Fast hair simulation algorithm with self-collision handling.</p>
+							<div class="row mb-1">
+								<div class="col-12">
+									<a href="projects/undergrad_thesis.pdf" class="btn btn-sm"><i class="fa-regular fa-file-lines"></i> Thesis (Chinese)</a>
+								</div>
+							</div>
+							<div class="row mb-1">
+								<div class="col-12">
+									<a href="https://github.com/pielet/creamystrand" class="btn btn-sm"><i class="fa-brands fa-github"></i> C++</a>
+									<a href="https://github.com/pielet/StrandSim" class="btn btn-sm"><i class="fa-brands fa-github"></i> CUDA</a>
+								</div>
+							</div>
+							<a href="https://youtu.be/oSxaAAdGk54" class="btn btn-sm"><i class="fa-brands fa-youtube"></i> Video</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card text-center" style="width: 13rem;">
+						<img src="projects/bending_shell.gif" class="card-img-top hover-img" alt="project: bending thin shell">
+						<h6 class="card-header">Thin shell simulation</h6>
+						<div class="card-body">
+							<p class="figure-caption">Thin shell simulation implemented in CUDA, rendered by Houdini.</p>
+							<a href="https://github.com/pielet/ClothSim" class="btn btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card text-center" style="width: 13rem;">
+						<img src="projects/ray_tracing.jpg" class="card-img-top hover-img" alt="project: ray tracing">
+						<h6 class="card-header">Ray tracing</h6>
+						<div class="card-body">
+							<p class="figure-caption">Ray tracing in one weekend & next week.</p>
+							<a href="https://github.com/pielet/ray-tracing" class="btn btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card text-center" style="width: 13rem;">
+						<img src="projects/sph.gif" class="card-img-top hover-img" alt="project: LabelText">
+						<h6 class="card-header">Fluid simulation</h6>
+						<div class="card-body">
+							<p class="figure-caption">Particle-based fluid simulation (SPH) using Taichi.</p>
+							<a href="https://github.com/pielet/GAMES201" class="btn btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mb-2">
+				<div class="col-3">
+					<div class="card text-center" style="width: 13rem;">
+						<img src="projects/JohnLemon.gif" class="card-img-top hover-img" alt="project: John Lemon's Haunting Jaunt">
+						<h6 class="card-header">John Lemon's Haunted Jaunt</h6>
+						<div class="card-body">
+							<p class="figure-caption">A 3D stealth game made by Unity.</p>
+							<a href="https://github.com/pielet/John-Lemons-Haunted-Jaunt" class="btn btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card text-center" style="width: 13rem;">
+						<img src="projects/datavis.png" class="card-img-top hover-img" alt="project: data visualization">
+						<h6 class="card-header">Spatial-temporal trajectory visual analytics</h6>
+						<div class="card-body">
+							<p class="figure-caption">An interactive data visualization website for analyzing the movement trajectory of conference attendee.</p>
+							<p class="figure-caption">(Submitted to <a href="https://chinavis.org/2019/english/challenge_en.html">ChinaVis 2019 Data Challenge</a>)</p>
+							<!-- <a href="projects/datavis_report.pdf" class="btn btn-sm"><i class="fa-regular fa-file-lines"></i> report (Chinese)</a> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card text-center" style="width: 13rem;">
+						<img src="projects/hairnet.png" class="card-img-top hover-img" alt="project: HairNet">
+						<h6 class="card-header">Hair generation</h6>
+						<div class="card-body">
+							<p class="figure-caption">An encoder-decoder CNN for hair generation from single-view images.</p>
+							<a href="https://github.com/pielet/HairNet" class="btn btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+							<a href="projects/hair_reconstruction_report.pdf" class="btn btn-sm"><i class="fa-regular fa-file-lines"></i> Report</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card text-center" style="width: 13rem;">
+						<img src="projects/labeltext.gif" class="card-img-top hover-img" alt="project: LabelText">
+						<h6 class="card-header">LabelText</h6>
+						<div class="card-body">
+							<p class="figure-caption">A graphical image text annotation tool for generating training data.</p>
+							<a href="https://github.com/runyuz/labeltext" class="btn btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			</div>
+<!-- 			<div class="col-2">
+				<a href="https://github.com/pielet/ray-tracing"><img src="projects/ray_tracing.jpg" alt="ray_tracing" class="img-thumbnail mx-auto d-block img-fluid"></a>
+			</div> -->
+			</div>
+		</div>
+
+		<footer class="row mb-4">
+			<figcaption class="figure-caption text-center">
+				Copyright © 2023 Shiyang Jia<br>
+				Last update: 8/2023
+			</figcaption>
+		</footer>
+
+		<script src="assets/script.js"></script>
+	</body>
+</html>
