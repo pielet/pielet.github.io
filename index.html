@@ -29,7 +29,7 @@
 	<body>
 		<div class="container container-small mb-5">
 			<div class="row pt-4 pb-2 justify-content-center">
-				<div class="col-7 pt-2 text-center fade-down" id="self-info">
+				<div class="col-sm-7 pt-2 text-center fade-down" id="self-info">
 					<h2>Shiyang Jia (郏诗阳)</h2>
 					<h5>PhD student @ UCSD</h5>
 					<div class="mt-2 mb-2">
@@ -45,7 +45,7 @@
 						<a href="mailto:syjia0325@gmail.com"><i class="fas fa-envelope hover-icon"></i></a> syjia0325@gmail.com
 					</div>
 				</div>
-				<div class="col-3 fade-left">
+				<div class="col-3 fade-left hideable">
 					<figure>
 						<img src="assets/ncg_light.png" alt="pielet" class="figure-img rounded img-fluid hover-profile" id="profile-img">
 						<figcaption class="figure-caption text-center">
@@ -86,7 +86,7 @@
 			</div>
 
 			<div class="row pb-2">
-				<div class="col-2">
+				<div class="col-2 hideable">
 					<img src="physical_cyclic_animations/cyclic_flag.gif" alt="physical_cyclic_animations" class="img-fluid rounded img-thumbnail">
 				</div>
 				<div class="col-10">
@@ -96,12 +96,12 @@
 						<br>
 						<a href="https://computeranimation.org">Proceedings of the ACM on Computer Graphics and Interactive Techniques <b>(SCA 2023)</b></a>, Los Angeles
 					</p>
-					<a href="physical_cyclic_animations" target="_self" class="btn btn-sm"><i class="fa-regular fa-window-restore"></i> Webpage</a>
-					<a href="physical_cyclic_animations/paper.pdf" class="btn btn-sm"><i class="fa-regular fa-file-lines"></i> Paper</a>
-					<a href="https://youtu.be/y-cW0uWe68s" class="btn btn-sm"><i class="fa-brands fa-youtube"></i> Video</a>
-					<a href="#" class="btn btn-sm"><i class="fa-brands fa-youtube"></i> Talk</a>
-					<a href="https://github.com/pielet/Codim-IPC/tree/master" class="btn btn-sm"><i class="fa-brands fa-github"></i> Code</a>
-					<button type="button" class="btn btn-sm btn-bibtex" data-bs-toggle="modal" data-bs-target="#bibtex-modal">
+					<a href="physical_cyclic_animations" target="_self" class="btn btn-sm mb-1"><i class="fa-regular fa-window-restore"></i> Webpage</a>
+					<a href="physical_cyclic_animations/paper.pdf" class="btn btn-sm mb-1"><i class="fa-regular fa-file-lines"></i> Paper</a>
+					<a href="https://youtu.be/y-cW0uWe68s" class="btn btn-sm mb-1"><i class="fa-brands fa-youtube"></i> Video</a>
+					<a href="#" class="btn btn-sm mb-1"><i class="fa-brands fa-youtube"></i> Talk</a>
+					<a href="#" class="btn btn-sm mb-1"><i class="fa-brands fa-github"></i> Code</a>
+					<button type="button" class="btn btn-sm btn-bibtex mb-1" data-bs-toggle="modal" data-bs-target="#bibtex-modal">
 						<i class="fa-solid fa-paperclip"></i> BibTex
 						<a href="physical_cyclic_animations/loopy.bib" hidden></a>
 						<div class="bibtex-content" hidden>@article{Jia:2023:PCA,
@@ -122,12 +122,11 @@
 			<hr>
 
 			<div class="row mb-2">
-				<span data-bs-toggle="collapse" href="#projects" role="button" aria-expanded="false"><h4>Projects</h4></span>
+				<span data-bs-toggle="collapse" role="button" data-bs-target="#projects" aria-expanded="false" aria-controls="projects"><h4>Projects</h4></span>
 			</div>
 
-			<div class="collapse" id="projects">
-			<div class="row mb-2">
-				<div class="col-3">
+			<div class="row collapse justify-content-evenly row-cols-sm-2" id="projects">
+				<div class="col-sm-auto mb-2">
 					<div class="card text-center" style="width: 13rem;">
 						<img src="projects/hairball.gif" class="card-img-top hover-img" alt="project: rotating hair ball">
 						<h6 class="card-header">Hair simulation</h6>
@@ -148,7 +147,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-sm-auto mb-2">
 					<div class="card text-center" style="width: 13rem;">
 						<img src="projects/bending_shell.gif" class="card-img-top hover-img" alt="project: bending thin shell">
 						<h6 class="card-header">Thin shell simulation</h6>
@@ -158,7 +157,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-sm-auto mb-2">
 					<div class="card text-center" style="width: 13rem;">
 						<img src="projects/ray_tracing.jpg" class="card-img-top hover-img" alt="project: ray tracing">
 						<h6 class="card-header">Ray tracing</h6>
@@ -168,7 +167,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-sm-auto mb-2">
 					<div class="card text-center" style="width: 13rem;">
 						<img src="projects/sph.gif" class="card-img-top hover-img" alt="project: LabelText">
 						<h6 class="card-header">Fluid simulation</h6>
@@ -178,9 +177,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row mb-2">
-				<div class="col-3">
+				<div class="col-sm-auto mb-2">
 					<div class="card text-center" style="width: 13rem;">
 						<img src="projects/JohnLemon.gif" class="card-img-top hover-img" alt="project: John Lemon's Haunting Jaunt">
 						<h6 class="card-header">John Lemon's Haunted Jaunt</h6>
@@ -190,7 +187,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-sm-auto mb-2">
 					<div class="card text-center" style="width: 13rem;">
 						<img src="projects/datavis.png" class="card-img-top hover-img" alt="project: data visualization">
 						<h6 class="card-header">Spatial-temporal trajectory visual analytics</h6>
@@ -201,7 +198,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-sm-auto mb-2">
 					<div class="card text-center" style="width: 13rem;">
 						<img src="projects/hairnet.png" class="card-img-top hover-img" alt="project: HairNet">
 						<h6 class="card-header">Hair generation</h6>
@@ -212,7 +209,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-sm-auto mb-2">
 					<div class="card text-center" style="width: 13rem;">
 						<img src="projects/labeltext.gif" class="card-img-top hover-img" alt="project: LabelText">
 						<h6 class="card-header">LabelText</h6>
@@ -222,7 +219,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
 			</div>
 
 			</div>

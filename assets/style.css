@@ -46,19 +46,24 @@ body {
     --theme-color-focus: #00cccc60;
 }
 
+@media (min-width: 387px) {
+  .container-small {
+    width: 387px;
+  }
+}
 @media (min-width: 576px) {
   .container-small {
-    width: 500px;
+    width: 540px;
   }
 }
 @media (min-width: 768px) {
   .container-small {
-    width: 670px;
+    width: 700px;
   }
 }
 @media (min-width: 992px) {
   .container-small {
-    width: 870px;
+    width: 900px;
   }
 }
 @media (min-width: 1200px) {
@@ -66,6 +71,12 @@ body {
 		width: 1000px;
 	}
 }
+@media (max-width: 576px) {
+  .hideable {
+    display: none;
+  }
+}
+
 .container-small {
 	max-width: 100%;
 }
