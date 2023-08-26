@@ -75,6 +75,9 @@ body {
   .hideable {
     display: none;
   }
+  .teaser-title {
+    font-size: 10px;
+  }
 }
 
 .container-small {
