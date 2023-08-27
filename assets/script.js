@@ -5,6 +5,7 @@ var light = hours > 6 && hours < 19;
 
 function lightmode () {
 	$('html').attr('data-bs-theme', 'light');
+	$('#signature').attr('src', 'assets/signature_black.png');
 	$('#teaser-img').attr('src', 'teaser_light.png');
 	$('.btn').removeClass('btn-outline-light');
 	$('.btn').addClass('btn-outline-dark');
@@ -14,6 +15,7 @@ function lightmode () {
 
 function darkmode () {
 	$('html').attr('data-bs-theme', 'dark');
+	$('#signature').attr('src', 'assets/signature_white.png');
 	$('#teaser-img').attr('src', 'teaser_dark.png');
 	$('.btn').removeClass('btn-outline-dark');
 	$('.btn').addClass('btn-outline-light');
