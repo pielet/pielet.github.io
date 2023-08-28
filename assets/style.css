@@ -138,9 +138,6 @@ h2, h4, h5, h6 {
   transform: scale(1.05);
 /*  box-shadow: 0 0 10px rgba(0, 204, 204, 0.3);*/
 }
-.represent-img {
-  width: 125px;
-}
 
 .fade-down {
   animation: fadeDown 1s ease;
